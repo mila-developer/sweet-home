@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.uk-navbar-item {
+  color: gray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px repeat(3, 1fr);
+  grid-template-rows: 100px 350px;
+  grid-template-areas: 
+  "feat feat feat feat feat feat feat feat"
+  "main main main main main main main main";
+  text-align: center;
+  padding: 24px;
+}
+
+.box {
+  border: 1px solid purple;
+}
+
+.feature {
+  border: none;
+}
+
+h3 {
+  padding: 24px;
+  color: blueviolet !important;
+}
+
+.feature {
+  grid-area: feat;
+}
+
+.content {
+  grid-area: main;
+  align-content: center;
+  justify-content: center;
+}
+
+.space {
+  background: url(https://i.pinimg.com/564x/4d/05/0f/4d050f17fbbdb09bb326e8f75a2b7750.jpg);
+  background-size: contain;
+}
+
+.books {
+  background: url(https://i.pinimg.com/564x/33/de/fb/33defb2f36c3c85fafc4abac8fda378d.jpg);
+  background-size: contain;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  padding: 8px;
+}
+
+.icons {
+  padding: 0 8px 0;
+  color: blueviolet;
+}
+
+footer {
+  padding: 8px 0;
+  text-align: center;
+}
